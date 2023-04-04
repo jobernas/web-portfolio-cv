@@ -1,0 +1,34 @@
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.parallax1 {
+    background-image: url("https://picsum.photos/1920/1080");
+}
+
+.parallax2 {
+    background-image: url("https://picsum.photos/1920/1080?blur");
+}
+
+.parallax3 {
+    background-image: url("https://picsum.photos/1920/1080?blur1");
+}
+
+.parallax-text {
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-shadow: 2px 2px #000;
+}

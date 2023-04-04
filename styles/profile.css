@@ -1,0 +1,62 @@
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://picsum.photos/1920/1080?blur2");
+  background-size: cover;
+  position: relative;
+  padding: 50px;
+  color: white;
+}
+
+.profile-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.profile-picture {
+  flex: 1 1 300px;
+  max-width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 60px;
+}
+
+.profile-picture img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-details {
+  flex: 1 1 300px;
+  max-width: 300px;
+  font-family: "Roboto", sans-serif; /* professional font family */
+  font-size: 1.3em; /* readable font size */
+  color: #FFF; /* dark gray text color */
+  line-height: 1.5; /* optimal line-height for readability */
+}
+
+@media screen and (max-width: 200px) {
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-picture,
+  .profile-details {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .profile-details {
+    margin-top: 20px;
+  }
+}
