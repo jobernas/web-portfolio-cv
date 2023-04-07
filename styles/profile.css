@@ -22,8 +22,8 @@
 }
 
 .profile-picture {
-  flex: 1 1 300px;
-  max-width: 300px;
+  flex: 1 1 400px;
+  max-width: 400px;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 60px;
@@ -36,12 +36,27 @@
 }
 
 .profile-details {
-  flex: 1 1 300px;
-  max-width: 300px;
+  flex: 1 1 400px;
+  max-width: 400px;
   font-family: "Roboto", sans-serif; /* professional font family */
-  font-size: 1.3em; /* readable font size */
+  font-size: 18px;
+  font-weight: 200;
   color: #FFF; /* dark gray text color */
   line-height: 1.5; /* optimal line-height for readability */
+}
+
+.email-link {
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800 !important;
+  letter-spacing: 1px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.email-link:hover {
+  color: #0077B5;
 }
 
 @media screen and (max-width: 200px) {

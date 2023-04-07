@@ -1,0 +1,81 @@
+{
+    "profile": {
+        "name": "Bernardo Luís",
+        "birthday": "1989-05-06",
+        "location": "Madeira, Portugal",
+        "job_title": "Mobile Tech Lead",
+        "email": "bernardo.luis@ealgorithm.net"
+    },
+    "about": "I am deeply enthusiastic about coding and take immense pleasure in working alongside a dynamic, multi-disciplinary team where their boundless creativity can spur me to bring out my best work. During my free time, I relish the company of my beloved family and friends. Ultimately, I cherish a relaxed environment where I can enjoy a hearty laugh over some great jokes.",
+    "work_experience": [
+        {
+            "company": "NEC Corporation",
+            "position": "Android Tech Lead",
+            "startDate": "November 2021",
+            "duration": "November 2021 - Present (1 year 6 months)",
+            "location": "Funchal, Ilha da Madeira, Portugal",
+            "description": "As the lead developer for the Android project, I am responsible for its development and direction. In addition, I conducted an analysis of the mobile department's development process and worked with a colleague on the iOS team to restructure the department. Through this process, we implemented improvements to the development process such as modularization of components, and continuous integration and distribution processes.",
+            "main_responsibilities": [
+              "Restructuring internal and external SDKs for use in several projects",
+              "Developing native Android apps",
+              "Managing internal continuous integration and distribution processes"
+            ]
+        },
+        {
+            "company": "BeatStars",
+            "position": "Mobile Team Leader (Android and iOS)",
+            "startDate": "February 2018",
+            "endDate": "September 2021",
+            "duration": "February 2018 - September 2021 (3 years 8 months)",
+            "location": "Funchal, Portugal",
+            "description": "As the Mobile Team Leader for both Android and iOS development, I was responsible for coordinating with other departments at BeatStars to ensure seamless integration of mobile development efforts. In addition to leading the development of the BeatStars Marketplace for Android and iOS, I was responsible for maintaining and updating previously released apps while keeping abreast of the latest technologies and trends in the market. My main responsibilities included developing native apps for both platforms, defining the technologies to use in Android and iOS, and serving as a UX design consultant.",
+            "main_responsibilities": [
+              "Development of native apps for iOS and Android",
+              "Defining the technologies to use in Android and iOS",
+              "Serving as a UX design consultant"
+            ]
+        },
+        {
+            "company": "Frontkom",
+            "position": "Android and iOS Developer",
+            "startDate": "March 2017",
+            "endDate": "February 2018",
+            "duration": "1 year",
+            "location": "Funchal, Madeira",
+            "responsibilities": [
+               "Development of native apps for iOS and Android",
+               "Development of hybrid apps in Ionic Platform",
+               "Define technologies to use in Android and iOS",
+               "UX Designer consultor",
+               "Manage App Build in Markets (AppStore and Google Play)",
+               "Communication with the Team and Clients"
+            ]
+        },
+        {
+            "company": "TV App Agency",
+            "position": "Team Leader - Software Developer",
+            "duration": "2 years 5 months",
+            "startDate": "July 2016",
+            "endDate": "December 2018",
+            "location": "Funchal, Madeira",
+            "responsibilities": [
+              "Team management and code review",
+              "Project planning and structuring",
+              "Defining technologies to use in Android application development, web, and smart TV",
+              "Providing support to other developers",
+              "Communication with the team and clients"
+            ]
+        },
+        {
+            "company": "startWEB",
+            "position": "Entrepreneur | Software Developer",
+            "location": "Funchal, Madeira",
+            "duration": "June 2013 - October 2014 (1 year 5 months)",
+            "responsibilities": [
+              "Design and concept of educational games for children from ages 3 to 6",
+              "Development of mobile and web apps (CMS, API's and webservices to support several apps)"
+            ]
+        }  
+    ]
+
+}

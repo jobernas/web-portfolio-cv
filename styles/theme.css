@@ -1,0 +1,4 @@
+p {
+    margin: 0; /* set margin to 0 to remove default spacing */
+    margin-bottom: 10px; /* add margin bottom to create space between paragraphs */
+}
