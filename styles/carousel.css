@@ -1,0 +1,23 @@
+.carousel-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.carousel-items {
+    overflow-x: hidden;
+    display: flex;
+}
+
+.carousel-item {
+    margin-left: 100px;
+    min-width: 50vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4ch;
+    font-family: "Roboto", sans-serif; /* professional font family */
+    font-size: 1.3em; /* readable font size */
+    color: #000; /* dark gray text color */
+}
+  

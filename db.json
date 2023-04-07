@@ -6,22 +6,24 @@
         "job_title": "Mobile Tech Lead",
         "email": "bernardo.luis@ealgorithm.net"
     },
-    "about": "I am deeply enthusiastic about coding and take immense pleasure in working alongside a dynamic, multi-disciplinary team where their boundless creativity can spur me to bring out my best work. During my free time, I relish the company of my beloved family and friends. Ultimately, I cherish a relaxed environment where I can enjoy a hearty laugh over some great jokes.",
+    "about": "I am deeply enthusiastic about coding and take immense pleasure in working alongside a dynamic, multi-disciplinary team where their creativity can spur me to bring out my best work. During my free time, I enjoy the company of my beloved family and friends. Ultimately, I cherish a relaxed environment where I can enjoy a hearty laugh over some great jokes.",
     "work_experience": [
         {
+            "logo": "http://localhost/jbernas-portfolio-cv/images/ic_nec_512.png",
             "company": "NEC Corporation",
             "position": "Android Tech Lead",
             "startDate": "November 2021",
             "duration": "November 2021 - Present (1 year 6 months)",
             "location": "Funchal, Ilha da Madeira, Portugal",
             "description": "As the lead developer for the Android project, I am responsible for its development and direction. In addition, I conducted an analysis of the mobile department's development process and worked with a colleague on the iOS team to restructure the department. Through this process, we implemented improvements to the development process such as modularization of components, and continuous integration and distribution processes.",
-            "main_responsibilities": [
+            "responsibilities": [
               "Restructuring internal and external SDKs for use in several projects",
               "Developing native Android apps",
               "Managing internal continuous integration and distribution processes"
             ]
         },
         {
+            "logo": "http://localhost/jbernas-portfolio-cv/images/ic_beatstars_512.png",
             "company": "BeatStars",
             "position": "Mobile Team Leader (Android and iOS)",
             "startDate": "February 2018",
@@ -29,13 +31,14 @@
             "duration": "February 2018 - September 2021 (3 years 8 months)",
             "location": "Funchal, Portugal",
             "description": "As the Mobile Team Leader for both Android and iOS development, I was responsible for coordinating with other departments at BeatStars to ensure seamless integration of mobile development efforts. In addition to leading the development of the BeatStars Marketplace for Android and iOS, I was responsible for maintaining and updating previously released apps while keeping abreast of the latest technologies and trends in the market. My main responsibilities included developing native apps for both platforms, defining the technologies to use in Android and iOS, and serving as a UX design consultant.",
-            "main_responsibilities": [
+            "responsibilities": [
               "Development of native apps for iOS and Android",
               "Defining the technologies to use in Android and iOS",
               "Serving as a UX design consultant"
             ]
         },
         {
+            "logo": "http://localhost/jbernas-portfolio-cv/images/ic_frontkom_512.png",
             "company": "Frontkom",
             "position": "Android and iOS Developer",
             "startDate": "March 2017",
@@ -52,6 +55,7 @@
             ]
         },
         {
+            "logo": "http://localhost/jbernas-portfolio-cv/images/ic_tvappagency_512.png",
             "company": "TV App Agency",
             "position": "Team Leader - Software Developer",
             "duration": "2 years 5 months",
@@ -67,6 +71,7 @@
             ]
         },
         {
+            "logo": "http://localhost/jbernas-portfolio-cv/images/ic_loopbug_512.png",
             "company": "startWEB",
             "position": "Entrepreneur | Software Developer",
             "location": "Funchal, Madeira",
