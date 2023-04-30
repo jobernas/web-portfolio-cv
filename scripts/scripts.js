@@ -1,5 +1,8 @@
 // Configuration
-const url = "http://localhost/jbernas-portfolio-cv";
+// DEV Server
+// const url = "http://localhost/jbernas-portfolio-cv";
+// Prod Server
+const url = "https://www.jobernas.info";
 
 // Functions
 function calculateAge(birthday) {
@@ -111,32 +114,7 @@ function scrollBySection(event, containers){
       }
     } 
   });
-
-  // // if user has scrolled past second threshold, scroll to container3
-  // if (scrollPosition > containerExperience.offsetTop) {
-  //   //event.preventDefault();
-    
-  //   isScrollingToSection = true
-  //   window.focus();
-  //   window.scrollTo({ 
-  //     top: containerEducation.offsetTop, 
-  //     left: 0,
-  //     behavior: 'smooth',
-  //     duration: 500 
-  //   });
-  //   // containerEducation.scrollIntoView({ behavior: 'smooth' });
-  //   // window.removeEventListener('scroll', scrollBySection);
-  // }
 }
-
-// function checkLock(event) {
-//   const scrollPosition = window.scrollY;
-//   const initialPosition = containerProfile.offsetTop;
-//   const finalPosition = containerExperience.offsetTop;
-//   if ((event.deltaY > 0 && scrollPosition > finalPosition - 25 && scrollPosition < finalPosition + 25) || 
-//   (event.deltaY < 0 && scrollPosition > initialPosition - 25 && scrollPosition < initialPosition + 25))
-//     isScrollingToSection = false;
-// }
 
 var horizontalScrollContainer;
 function scrollHorizontalWheelEvent(event) {
@@ -155,23 +133,6 @@ function scrollHorizontalWheelEvent(event) {
   console.log("deltaY:"+event.deltaY);
   console.log("finalPositionX:"+finalPosition);
 }
-
-// var scrollPosition = 0;
-// var carouselHeight = 0;
-
-// function updateCarouselPosition() {
-//   const windowHeight = window.innerHeight;
-//   const documentHeight = document.documentElement.scrollHeight;
-//   const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-
-//   if (scrollPosition + windowHeight >= documentHeight) {
-//     currentPosition += 500;
-//     if (currentPosition > carouselTrack.scrollWidth - carouselContainer.clientWidth) {
-//       currentPosition = carouselTrack.scrollWidth - carouselContainer.clientWidth;
-//     }
-//     carouselTrack.style.transform = `translateX(-${currentPosition}px)`;
-//   }
-// }
 
 // Once Window is Loaded Setup Content
 window.onload = function() {
@@ -202,12 +163,5 @@ window.onload = function() {
   window.addEventListener('wheel', debounce(function(event) {
     scrollBySection(event, containers);
   }, 100));
-  
-  // window.scrollTo({ 
-  //   top: containerExperience.offsetTop, 
-  //   left: 0,
-  //   behavior: 'smooth',
-  //   duration: 500 
-  // });
 
 };
