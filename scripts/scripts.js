@@ -1,8 +1,10 @@
 // Configuration
 // DEV Server
+const path = "../jbernas-portfolio-cv/";
 // const url = "http://localhost/jbernas-portfolio-cv";
 // Prod Server
-const url = "https://www.jobernas.info";
+// const url = "https://www.jobernas.info";
+//const path = "../";
 
 // Functions
 function calculateAge(birthday) {
@@ -46,18 +48,17 @@ function fillProfileData(profile, about) {
   emailField.innerHTML = profile.email;
   emailField.href = "mailto:"+profile.email;
   document.getElementById("profile_about").innerHTML = about;
-  
 }
 
 function fillExperienceData(experience) {
-  fetch(url+'/components/work_experience.html')
+  fetch(path+'components/work-experience-item.html')
     .then(response => response.text())
-    .then(data => {
+    .then(compHTML => {
       const container = document.getElementById("carousel-track");
       experience.forEach(function(item) {
         const component = document.createElement('div');
         component.classList.add('carousel-item');
-        component.innerHTML = data;
+        component.innerHTML = compHTML;
         console.log(component);
         component.querySelector('#work-experience-logo').src = item.logo;
         component.querySelector('#work-experience-job-title').innerHTML = item.position;
@@ -84,11 +85,6 @@ function scrollBySection(event, containers){
     const threshold = initialContainer.clientHeight;
     const initialPosition = initialContainer.offsetTop;
     const finalPosition = finalContainer.offsetTop;
-    console.log("threshold:"+threshold);
-    console.log("scrollPosition:"+scrollPosition);
-    console.log("initialPosition:"+initialPosition);
-    console.log("finalPosition:"+finalPosition);
-    console.log("event.deltaY:"+event.deltaY);
 
     if (event.deltaY > 0) {
       if (scrollPosition > initialPosition && scrollPosition < finalPosition) {
@@ -127,24 +123,48 @@ function scrollHorizontalWheelEvent(event) {
 
   event.preventDefault();
   horizontalScrollContainer.scrollLeft += event.deltaY;
-  //scrollContainer.scrollLeft += evt.deltaY;
-  console.log("current.scrollLeft:"+horizontalScrollContainer.scrollLeft);
-  console.log("previousScrollLeft:"+previousScrollLeft);
-  console.log("deltaY:"+event.deltaY);
-  console.log("finalPositionX:"+finalPosition);
+}
+
+// Show Progress
+function showProgress() {
+  const loader = document.querySelector(".loader");
+  const progress = document.querySelector(".progress");
+  let progressValue = 0;
+  let interval = setInterval(() => {
+    progressValue++;
+    loader.textContent = `${progressValue} %`;
+    progress.style.width = `${progressValue}%`;
+    if (progressValue === 100) {
+      clearInterval(interval);
+      hideProgress();
+    }
+  }, 15);
+}
+
+function hideProgress() {
+  const loader = document.querySelector(".loader-container");
+  loader.style.display = 'none';
 }
 
 // Once Window is Loaded Setup Content
 window.onload = function() {
+  const request = path+'db.json';
 
   // Load Data from DB and Populate Page
-  fetch(url+'/db.json')
+  showProgress();
+  fetch(request)
     .then(response => response.json())
+    .then(data => {
+      fillProfileData(data.profile, data.about);
+      return data;
+    })
+    .then(data => {
+      fillExperienceData(data.work_experience);
+      return data;
+    })
     .then(data => {
       // do something with the data
       console.log(data);
-      fillProfileData(data.profile, data.about);
-      fillExperienceData(data.work_experience);
     })
     .catch(error => console.error(error));
   

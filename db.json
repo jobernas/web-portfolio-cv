@@ -9,7 +9,7 @@
     "about": "I am deeply enthusiastic about coding and take immense pleasure in working alongside a dynamic, multi-disciplinary team where their creativity can spur me to bring out my best work. During my free time, I enjoy the company of my beloved family and friends. Ultimately, I cherish a relaxed environment where I can enjoy a hearty laugh over some great jokes.",
     "work_experience": [
         {
-            "logo": "http://localhost/jbernas-portfolio-cv/images/ic_nec_512.png",
+            "logo": "images/ic_nec_512.png",
             "company": "NEC Corporation",
             "position": "Android Tech Lead",
             "startDate": "November 2021",
@@ -23,7 +23,7 @@
             ]
         },
         {
-            "logo": "http://localhost/jbernas-portfolio-cv/images/ic_beatstars_512.png",
+            "logo": "images/ic_beatstars_512.png",
             "company": "BeatStars",
             "position": "Mobile Team Leader (Android and iOS)",
             "startDate": "February 2018",
@@ -38,7 +38,7 @@
             ]
         },
         {
-            "logo": "http://localhost/jbernas-portfolio-cv/images/ic_frontkom_512.png",
+            "logo": "images/ic_frontkom_512.png",
             "company": "Frontkom",
             "position": "Android and iOS Developer",
             "startDate": "March 2017",
@@ -54,7 +54,7 @@
             ]
         },
         {
-            "logo": "http://localhost/jbernas-portfolio-cv/images/ic_tvappagency_512.png",
+            "logo": "images/ic_tvappagency_512.png",
             "company": "TV App Agency",
             "position": "Team Leader - Software Developer",
             "duration": "July 2016 - December 2018 (2 years 5 months)",
@@ -71,7 +71,7 @@
             ]
         },
         {
-            "logo": "http://localhost/jbernas-portfolio-cv/images/ic_loopbug_512.png",
+            "logo": "images/ic_loopbug_512.png",
             "company": "startWEB",
             "position": "Entrepreneur | Software Developer",
             "location": "Funchal, Madeira",

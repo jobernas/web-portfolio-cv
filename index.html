@@ -1,51 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bernardo Luis - Curriculum Page</title>
-	<!-- Load Project Font -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700;900&display=swap" rel="stylesheet">
-	<!-- Fave Icon Image -->
-	<link rel="icon" type="image/png" href="images/favicon-32x32.png">
-	<!-- Load Styles -->
-	<link rel="stylesheet" href="styles/theme.css" />
-    <link rel="stylesheet" href="styles/profile.css" />
-	<link rel="stylesheet" href="styles/work-expirience.css" />
-	<link rel="stylesheet" href="styles/paralax.css" />
-	<link rel="stylesheet" href="styles/carousel.css" />
-	<link rel="stylesheet" href="components/work_experience.css" />
-	<!-- Load Scripts  -->
-	<script src="scripts/scripts.js"></script>
-</head>
-<body id="main-container">
-	<div id="profile-container" class="parallax profile-container">
-		<div class="profile-picture">
-		  <img src="images/ic_profile_bernas_1000.png" alt="Bernardo Luís Profile Picture">
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Bernardo Luis - Curriculum Page</title>
+		<!-- Load Project Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700;900&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap" rel="stylesheet">
+		<!-- Fave Icon Image -->
+		<link rel="icon" type="image/png" href="images/favicon-32x32.png">
+		<!-- Load Styles -->
+		<link rel="stylesheet" href="styles/loader.css" />
+		<link rel="stylesheet" href="styles/theme.css" />
+		<link rel="stylesheet" href="styles/profile.css" />
+		<link rel="stylesheet" href="styles/work-expirience.css" />
+		<link rel="stylesheet" href="styles/paralax.css" />
+		<link rel="stylesheet" href="styles/carousel.css" />
+		<link rel="stylesheet" href="components/work-experience-item.css" />
+		<!-- Load Scripts  -->
+		<script src="scripts/scripts.js"></script>
+	</head>
+	<body id="main-container">
+		<div class="loader-container">
+			<div class="progress-bar">
+			  <div class="progress"></div>
+			</div>
+			<div class="loader">0</div>
+		  </div>
+		<div id="profile-container" class="parallax profile-container">
+			<div class="profile-picture">
+			<img src="images/ic_profile_bernas_1000.png" alt="Bernardo Luís Profile Picture">
+			</div>
+			<div class="profile-details">
+			<h1><span id="profile_name"></span></h1>
+			<p><span class="bold">Age: </span> <span id="profile_age"></span></p>
+			<p><span class="bold">Location: </span> <span id="profile_location"></span></p>
+			<p><span class="bold">Occupation:</span> <span id="profile_position"></span></p>
+			<p><span class="bold">Email:</span> <a id="profile_email" href="" class="email-link"></a></p>
+			<p><span class="bold">About me:</span> <span id="profile_about"></span></p>
+			</div>
+			<!-- TODO: Add Social Links Here, Twitter, Linkedin, Stackoverflow -->
 		</div>
-		<div class="profile-details">
-		  <h1><span id="profile_name"></span></h1>
-		  <p><span class="bold">Age: </span> <span id="profile_age"></span></p>
-		  <p><span class="bold">Location: </span> <span id="profile_location"></span></p>
-		  <p><span class="bold">Occupation:</span> <span id="profile_position"></span></p>
-		  <p><span class="bold">Email:</span> <a id="profile_email" href="" class="email-link"></a></p>
-		  <p><span class="bold">About me:</span> <span id="profile_about"></span></p>
-		</div>
-	</div>
-	<div id="experience-container" class="parallax work-experience-container">
-		<div id="carousel-container" class="carousel-container">
-			<div id="carousel-track" class="carousel-items">
-			  
+		<div id="experience-container" class="parallax work-experience-container">
+			<div id="carousel-container" class="carousel-container">
+				<div id="carousel-track" class="carousel-items">
+				
+				</div>
 			</div>
 		</div>
-    </div>
-	<!-- TODO: Add Education Container -->
-    <!-- <div id="education-container" class="parallax parallax2">
-    </div> -->
-	<!-- TODO: Add Projects Container -->
-	<!--
-    <div id="social-container" class="parallax parallax3">
-    </div> -->
-</body>
+		<!-- TODO: Add Education Container -->
+		<!-- <div id="education-container" class="parallax parallax2">
+		</div> -->
+		<!-- TODO: Add Projects Container -->
+		<!--
+		<div id="social-container" class="parallax parallax3">
+		</div> -->
+	</body>
 </html>

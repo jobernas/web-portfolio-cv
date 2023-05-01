@@ -5,6 +5,7 @@
     align-items: center;
     background-image: url("../images/bg_open_office.jpg");
     background-size: cover;
+    position: relative;
     color: white;
 }
   
